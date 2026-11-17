@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anshik Jain — Forward-Deployed Engineer · Freelance</title>
+  <meta name="description" content="Anshik Jain is a forward-deployed engineer who takes products from idea to production — frontend, backend, AI, real-time and deployment. Available for freelance projects.">
+  <meta name="theme-color" content="#EEEAE1">
+  <meta property="og:title" content="Anshik Jain — Forward-Deployed Engineer">
+  <meta property="og:description" content="From messy idea to live in production. MVPs, AI features, real-time apps and deploys — built end to end by one engineer.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF4F1F'/%3E%3Cpath d='M18 50V22h9v4c2-3 6-5 10-5 7 0 11 5 11 12v17h-9V35c0-4-2-6-5-6s-7 2-7 7v14z' fill='%23111'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/Archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JetBrainsMono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ReenieBeanie.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-loading">
+
+  <!-- background column lines -->
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- custom cursor -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__label"></span></div>
+
+  <!-- hero image trail -->
+  <div class="trail" aria-hidden="true"></div>
+
+  <!-- floating project preview (fallback list only) -->
+  <div class="preview" aria-hidden="true"><div class="preview__track"></div></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__brand" data-roll>a.j — fde</a>
+    <p class="nav__meta nav__role">Forward-deployed engineer</p>
+    <p class="nav__meta nav__where"><span class="pulse"></span>Taking projects · <span class="nav__clock" data-clock>--:--</span></p>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-roll>Work</a>
+      <a href="#services" data-roll>Services</a>
+      <a href="#contact" class="nav__cta" data-roll>Hire me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__top">
+        <p class="hero__lede" data-split>
+          I take products from a <span class="c-orange">messy idea</span> to <span class="c-blue">live in production</span>
+          — frontend, backend, AI, deploys. <span class="c-green squiggle">All of it.</span>
+        </p>
+        <ul class="hero__facts mono">
+          <li><span>( Role )</span> Forward-deployed engineer</li>
+          <li><span>( Now )</span> Taking freelance projects</li>
+          <li><span>( Ships )</span> Web apps · AI · Real-time · Infra</li>
+        </ul>
+      </div>
+
+      <p class="hero__hint hand" aria-hidden="true">( psst — wiggle your mouse around )</p>
+      <p class="hero__note hand" aria-hidden="true">hmm… something’s missing</p>
+      <p class="loader-count mono" aria-hidden="true"><span>000</span>%</p>
+
+      <h1 class="name" aria-label="Anshik Jain">
+        <span class="name__word" aria-hidden="true"><span class="ch"><span class="g">a</span></span><span class="ch ch--n"><span class="g">n</span></span><span class="ch"><span class="g">s</span></span><span class="ch"><span class="g">h</span></span><span class="ch"><span class="g">i</span></span><span class="ch"><span class="g">k</span></span></span><span class="name__gap" aria-hidden="true"></span><span class="name__word" aria-hidden="true"><span class="ch"><span class="g">j</span></span><span class="ch"><span class="g">a</span></span><span class="ch"><span class="g">i</span></span><span class="ch ch--n"><span class="g">n</span></span></span>
+      </h1>
+
+      <p class="hero__scroll mono" aria-hidden="true">scroll &amp; watch it fall ↓</p>
+    </section>
+
+    <!-- ============ 01 PENCIL ============ -->
+    <section class="sketch" id="hello">
+      <div class="sketch__pin">
+        <div class="sketch__copy">
+          <p class="label mono">01 — How it goes</p>
+          <h2 class="sketch__title">
+            Most of my work starts with a <span class="c-graphite under-pencil">pencil</span> and ends up live in <span class="c-orange mark">production</span>.
+          </h2>
+          <ol class="sketch__steps mono">
+            <li class="is-on"><b>a.</b> A scribble on our first call</li>
+            <li><b>b.</b> A system in a repo, shipped by CI</li>
+            <li><b>c.</b> Live, in your users’ hands</li>
+          </ol>
+        </div>
+
+        <div class="sketch__stage">
+          <svg class="sketch__svg" viewBox="0 0 680 500" aria-hidden="true">
+            <g class="sk-lines" transform="translate(60 50)"></g>
+            <g class="sk-notes"></g>
+          </svg>
+
+          <!-- b. the system: a deploy log -->
+          <div class="sketch__code mono" aria-hidden="true">
+            <div class="code__bar"><i></i><i></i><i></i><span>deploy — zsh</span></div>
+            <pre><span class="d">~/pod-tube</span> <span class="a">main</span>
+<span class="k">$</span> git push origin main
+<span class="d">→ ci</span>      lint · types · tests     <span class="s">✓</span>
+<span class="d">→ build</span>   docker image   42s       <span class="s">✓</span>
+<span class="d">→ db</span>      prisma migrate deploy    <span class="s">✓</span>
+<span class="d">→ deploy</span>  railway · health-check   <span class="s">✓</span>
+<span class="f">● live</span>  https://pod-tube.app</pre>
+          </div>
+
+          <!-- c. the real thing -->
+          <div class="sketch__real" aria-hidden="true">
+            <div class="real__bar"><i></i><i></i><i></i><span class="real__url mono">pod-tube.app/studio</span></div>
+            <p class="real__h">Record podcasts<br>in your browser.</p>
+            <p class="real__p">Two people, one link. Tracks recorded locally, merged by FFmpeg, delivered as MP4.</p>
+            <span class="real__btn"><i></i>Start recording</span>
+            <div class="real__media">
+              <div class="real__faces"><b></b><b></b></div>
+              <div class="real__wave"></div>
+            </div>
+            <div class="real__card real__card--1"><b>WebRTC</b><span>live call</span></div>
+            <div class="real__card real__card--2"><b>R2</b><span>chunked uploads</span></div>
+            <div class="real__card real__card--3"><b>FFmpeg</b><span>5-stage pipeline</span></div>
+            <svg class="real__cursor" viewBox="0 0 24 24"><path d="M3 2l17 10-7 2-3 7z" fill="#111" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+
+          <svg class="sketch__pencil" viewBox="0 0 120 120" aria-hidden="true">
+            <g transform="rotate(40 60 60)">
+              <path d="M52 8h16v74H52z" fill="#FFD23F" stroke="#111" stroke-width="2.5"/>
+              <path d="M52 8h16v10H52z" fill="#F4B6CE" stroke="#111" stroke-width="2.5"/>
+              <path d="M52 18h16v6H52z" fill="#C9C4B8" stroke="#111" stroke-width="2.5"/>
+              <path d="M52 82h16l-8 24z" fill="#F3D9B1" stroke="#111" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M57 97h6l-3 9z" fill="#333"/>
+              <path d="M60 24v58" stroke="#111" stroke-width="1.5" opacity=".35"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro">
+      <p class="intro__text" data-split>
+        I’m Anshik — a forward-deployed engineer. I sit with the problem, then build the whole thing:
+        <span class="c-blue">the interface</span>, <span class="c-orange">the APIs and database</span>, <span class="c-green">the AI</span>,
+        and the pipeline that ships it. One person who owns it end to end — so nothing gets lost between handoffs.
+      </p>
+      <p class="intro__sign hand">— a.j, probably reading your logs</p>
+    </section>
+
+    <!-- ============ 02 WORK — curved slider ============ -->
+    <section class="works" id="work">
+      <div class="works__pin">
+        <p class="works__label label mono">02 — Selected work</p>
+        <h2 class="works__big" aria-label="Work"><span>W</span><span>O</span><span>R</span><span>K</span></h2>
+        <canvas class="works__gl" aria-hidden="true"></canvas>
+        <div class="works__ui">
+          <p class="works__count mono"><span class="works__cur">01</span> / <span class="works__total">04</span></p>
+          <div class="works__dots" aria-hidden="true"></div>
+          <p class="works__hint mono">scroll to slide · click to open the case</p>
+        </div>
+        <!-- accessible / no-WebGL fallback -->
+        <ul class="work__list">
+          <li class="work__row" data-project="podtube" style="--c:#2536C8" tabindex="0" role="button" aria-label="Open the case: Pod-Tube">
+            <span class="work__idx mono">01</span>
+            <span class="work__name">Pod-Tube</span>
+            <span class="work__desc">A podcast studio that lives in a browser tab.</span>
+            <span class="work__tags mono">WebRTC · FFmpeg · R2</span>
+            <span class="work__year mono">2025</span>
+            <span class="work__thumb"></span>
+          </li>
+          <li class="work__row" data-project="parking" style="--c:#2F5D3A" tabindex="0" role="button" aria-label="Open the case: Smart Parking">
+            <span class="work__idx mono">02</span>
+            <span class="work__name">Smart Parking</span>
+            <span class="work__desc">Find it, book it, park it. Hackathon top-10.</span>
+            <span class="work__tags mono">Maps API · Prisma · Turborepo</span>
+            <span class="work__year mono">2025</span>
+            <span class="work__thumb"></span>
+          </li>
+          <li class="work__row" data-project="xinterview" style="--c:#FF4F1F" tabindex="0" role="button" aria-label="Open the case: Xinterview">
+            <span class="work__idx mono">03</span>
+            <span class="work__name">Xinterview</span>
+            <span class="work__desc">Shipped fixes, features and AI to 1,000+ daily users.</span>
+            <span class="work__tags mono">Next.js · AI · Extensions</span>
+            <span class="work__year mono">2025</span>
+            <span class="work__thumb"></span>
+          </li>
+          <li class="work__row work__row--next" data-project="next" style="--c:#111" tabindex="0" role="button" aria-label="Start a project with Anshik">
+            <span class="work__idx mono">04</span>
+            <span class="work__name">Your product?</span>
+            <span class="work__desc">This slot is open. Let’s fill it.</span>
+            <span class="work__tags mono">Anything · Really</span>
+            <span class="work__year mono">2026</span>
+            <span class="work__thumb"></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 03 SERVICES ============ -->
+    <section class="services" id="services">
+      <header class="sec-head">
+        <p class="label mono">03 — What I can build for you</p>
+        <h2 class="sec-title" data-split>Hire one engineer, get the <span class="c-orange">whole team</span> <span class="hand sec-title__aside">(minus the meetings)</span></h2>
+      </header>
+      <div class="svc">
+        <article class="svc__card" style="--c:#2536C8">
+          <p class="svc__n mono">01</p>
+          <h3 class="svc__t">MVPs &amp; SaaS products</h3>
+          <p class="svc__d">Idea to a deployed, working product — auth, dashboards, database, admin, payments-ready. Built so it can grow, not be rewritten.</p>
+          <p class="svc__tags mono">Next.js · Node · Postgres · Prisma</p>
+        </article>
+        <article class="svc__card" style="--c:#FF4F1F">
+          <p class="svc__n mono">02</p>
+          <h3 class="svc__t">AI features &amp; automations</h3>
+          <p class="svc__d">LLM features that actually help users, agents that do real work, and n8n workflows that delete hours of manual ops every week.</p>
+          <p class="svc__tags mono">OpenAI API · Agents · n8n · RAG</p>
+        </article>
+        <article class="svc__card" style="--c:#2F7A4A">
+          <p class="svc__n mono">03</p>
+          <h3 class="svc__t">Real-time &amp; media apps</h3>
+          <p class="svc__d">Video calls, live collaboration, recording and processing pipelines. The hard, stateful stuff most teams avoid.</p>
+          <p class="svc__tags mono">WebRTC · Socket.IO · FFmpeg · R2</p>
+        </article>
+        <article class="svc__card" style="--c:#E86FA0">
+          <p class="svc__n mono">04</p>
+          <h3 class="svc__t">Ship, fix &amp; scale</h3>
+          <p class="svc__d">CI/CD, Docker, cloud deploys — and rescuing slow, buggy apps. I’ve cut load times 20% for 1,000+ daily users.</p>
+          <p class="svc__tags mono">Docker · CI/CD · Vercel · Railway</p>
+        </article>
+      </div>
+
+      <ol class="process">
+        <li><span class="mono">Step 01</span><b>Call</b><em>We scope it together. You get a clear plan, timeline and a fixed quote.</em></li>
+        <li><span class="mono">Step 02</span><b>Build</b><em>Weekly demos on a live staging link. You see progress, not promises.</em></li>
+        <li><span class="mono">Step 03</span><b>Ship</b><em>Deployed to production, documented, handed over with access to everything.</em></li>
+        <li><span class="mono">Step 04</span><b>Support</b><em>I stick around for fixes and the next feature. No disappearing act.</em></li>
+      </ol>
+    </section>
+
+    <!-- ============ 04 RECEIPTS ============ -->
+    <section class="receipts">
+      <header class="sec-head">
+        <p class="label mono">04 — The receipts</p>
+        <h2 class="sec-title" data-split>Numbers I’m <span class="c-orange">quietly</span> proud of</h2>
+      </header>
+      <div class="receipts__grid">
+        <div class="stat"><p class="stat__n c-orange"><span data-count="25">0</span>+</p><p class="stat__l">critical production bugs fixed &amp; deployed</p></div>
+        <div class="stat"><p class="stat__n c-blue"><span data-count="20">0</span>%</p><p class="stat__l">faster page loads for 1,000+ daily users</p></div>
+        <div class="stat"><p class="stat__n c-green"><span data-count="40">0</span>%</p><p class="stat__l">less setup time with an AI module that writes 200+ interview questions</p></div>
+        <div class="stat"><p class="stat__n c-pink">#<span data-count="1">0</span></p><p class="stat__l">out of 200+ at Algathon ’24 — with a perfect score</p></div>
+      </div>
+    </section>
+
+    <!-- ============ 05 STACK ============ -->
+    <section class="toolbox" id="stack" aria-label="Stack">
+      <header class="sec-head">
+        <p class="label mono">05 — The stack, layer by layer</p>
+        <h2 class="sec-title" data-split>From the pixel to the <span class="c-blue">server</span></h2>
+      </header>
+      <div class="marquee" data-dir="1"><div class="marquee__track">
+        <span>Next.js</span><i></i><span>Node.js</span><i></i><span>PostgreSQL</span><i></i><span>WebRTC</span><i></i><span>OpenAI</span><i></i><span>Docker</span><i></i><span>TypeScript</span><i></i><span>FFmpeg</span><i></i>
+      </div></div>
+      <div class="layers">
+        <div class="layer"><p class="layer__h mono"><b style="--c:#2536C8"></b>Frontend</p><p>React, Next.js, TypeScript, Tailwind CSS, HTML/CSS, browser extensions</p></div>
+        <div class="layer"><p class="layer__h mono"><b style="--c:#FF4F1F"></b>Backend</p><p>Node.js, Express, REST APIs, JWT auth, background jobs, system design</p></div>
+        <div class="layer"><p class="layer__h mono"><b style="--c:#2F7A4A"></b>Data</p><p>PostgreSQL, MongoDB, Prisma ORM, transactions &amp; row-level locking</p></div>
+        <div class="layer"><p class="layer__h mono"><b style="--c:#E86FA0"></b>Real-time &amp; media</p><p>WebRTC, Socket.IO, FFmpeg pipelines, chunked &amp; resumable uploads</p></div>
+        <div class="layer"><p class="layer__h mono"><b style="--c:#FFD23F"></b>AI &amp; automation</p><p>OpenAI API, LLM features, prompt engineering, n8n workflows</p></div>
+        <div class="layer"><p class="layer__h mono"><b style="--c:#111"></b>Cloud &amp; DevOps</p><p>Docker, CI/CD, Vercel, Railway, Cloudflare R2, Turborepo, Git</p></div>
+      </div>
+    </section>
+
+    <!-- ============ 06 ABOUT ============ -->
+    <section class="about" id="about">
+      <header class="sec-head">
+        <p class="label mono">06 — The boring part</p>
+        <h2 class="sec-title" data-split>A short, <span class="c-blue">mostly true</span> timeline</h2>
+      </header>
+      <ol class="timeline">
+        <li><span class="mono">2023 →</span><b>Started B.Tech CSE</b><em>Meerut Institute of Engineering &amp; Technology — graduating 2027.</em></li>
+        <li><span class="mono">2024</span><b>1st place, Algathon</b><em>Out of 200+ participants in a DSA coding competition, with a perfect score.</em></li>
+        <li><span class="mono">2025</span><b>Top-10, Bharat Shiksha Expo</b><em>Led the team that built the Smart Parking App prototype.</em></li>
+        <li><span class="mono">Jun—Oct ’25</span><b>Developer Intern, Xinterview</b><em>Remote. Shipped fixes, features, AI modules and browser extensions to production.</em></li>
+        <li class="is-now"><span class="mono">Now</span><b>Taking freelance builds</b><em>MVPs, AI features, real-time apps, and rescue jobs for apps that are slow or broken.</em></li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- ============ 07 FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__top">
+      <p class="label mono">07 — Your turn</p>
+      <h2 class="footer__cta" data-split>Got something to build?<br>I’ll take it to <span class="c-orange">production.</span></h2>
+      <div class="footer__actions">
+        <a class="btn" href="mailto:anshikjain56@gmail.com?subject=Project%20enquiry&amp;body=Hi%20Anshik%2C%0A%0AWhat%20I%27m%20building%3A%0ATimeline%3A%0ABudget%20range%3A%0A">Start a project <span aria-hidden="true">→</span></a>
+        <a class="footer__mail" href="mailto:anshikjain56@gmail.com" data-roll>anshikjain56@gmail.com</a>
+      </div>
+      <ul class="footer__links mono">
+        <li><a href="https://github.com/Anshik-18" target="_blank" rel="noopener" data-roll>GitHub ↗︎</a></li>
+        <li><a href="https://www.linkedin.com/in/anshik-jain-6349b7330/" target="_blank" rel="noopener" data-roll>LinkedIn ↗︎</a></li>
+        <li><a href="Anshik_Jain_Resume.pdf" target="_blank" rel="noopener" data-roll>Résumé ↗︎</a></li>
+      </ul>
+    </div>
+
+    <div class="pit" aria-hidden="true">
+      <canvas class="pit__canvas"></canvas>
+      <p class="pit__hint hand">go on, throw them around</p>
+      <button class="pit__reset mono" type="button" tabindex="-1">↺ drop again</button>
+    </div>
+
+    <div class="footer__bar mono">
+      <span>© 2026 Anshik Jain</span>
+      <span class="footer__made">Designed, built &amp; deployed by me. Obviously.</span>
+      <a href="#top" data-roll>Back to the top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ CASE OVERLAY ============ -->
+  <div class="case" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="case-title">
+    <div class="case__scroll" data-lenis-prevent>
+      <div class="case__bar mono">
+        <span class="case__kind"></span>
+        <button class="case__close" type="button">[ close the case ]</button>
+      </div>
+      <h2 class="case__title" id="case-title"></h2>
+      <p class="case__blurb"></p>
+      <div class="case__art"></div>
+      <div class="case__body">
+        <dl class="case__meta mono"></dl>
+        <ul class="case__points"></ul>
+      </div>
+      <div class="case__links"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js" defer></script>
+  <script src="art.js" defer></script>
+  <script src="slider.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
